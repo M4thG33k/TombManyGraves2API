@@ -1,0 +1,16 @@
+[
+{
+  "modid": "tombmanygraves2api",
+  "name": "TombManyGraves2 API",
+  "description": "The API used by Tomb Many Graves 2 for gathering/restoring inventories to their original slots",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["M4thG33k"],
+  "credits": "",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
