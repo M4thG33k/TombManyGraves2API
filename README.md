@@ -6,7 +6,7 @@ An example of how to use the API can be found within Tomb Many Graves 2 itself: 
 
 Mods which use this API need to be initialized *after* both the API and Tomb Many Graves 2 to allow the events to be handled in the correct order. (Failure to do so may cause TMG2 to not realize your special inventory exists!)
 
-In order to add compatiblity, you will need to create a class which extends ISpecialInventory and then (in the Forge Initialization event) post an EventRegisterMySpecialInventory passing in your ISpecialInventory instance. Tomb Many Graves will handle the rest! 
+In order to add compatibility, you will need to create a class which extends ISpecialInventory and then (in the Forge Initialization event) post an EventRegisterMySpecialInventory passing in your ISpecialInventory instance. Tomb Many Graves will handle the rest! 
 
 If that seems too complicated, a simpler approach: Create a class that extends AbstractSpecialInventory - its default constructor takes care of sending the EventRegisterMySpecialInventory event for you! All you have to do then is create a new instance of that class during the FMLInitializationEvent! The [plugin I created to add compatibility with Cosmetic Armor Reworked](https://github.com/M4thG33k/TombManyPlugins/blob/master/CosmeticArmor/src/main/java/com/m4thg33k/tombmanyplugins_cosmeticarmorreworked/TombManyPluginsCosmeticArmorReworked.java) is an example of a single-file plugin.
 
